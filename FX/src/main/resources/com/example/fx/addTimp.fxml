@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addCircuitAnchor" maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.newLapController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Adaugati">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timpi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistici">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cheltuieli">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Grafice">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                                <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label alignment="TOP_CENTER" layoutY="57.0" prefHeight="47.0" prefWidth="1000.0" text="Introduceti un tur nou">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+      <Label layoutX="185.0" layoutY="160.0" text="Nume Circuit: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="160.0" text="Timp: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timp" layoutX="615.0" layoutY="161.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="184.0" layoutY="306.0" text="Overall Best(in acel moment): ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="best" layoutX="421.0" layoutY="307.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="184.0" layoutY="370.0" text="S1: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="s1" layoutX="213.0" layoutY="371.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="648.0" layoutY="370.0" text="S3: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="s3" layoutX="675.0" layoutY="371.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="430.0" layoutY="370.0" text="S2: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="s2" layoutX="459.0" layoutY="371.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="184.0" layoutY="232.0" text="Data: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="data" layoutX="230.0" layoutY="233.0" />
+      <Label layoutX="662.0" layoutY="232.0" text="Ora: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ora" layoutX="700.0" layoutY="233.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button layoutX="352.0" layoutY="473.0" mnemonicParsing="false" onAction="#addLap" prefHeight="56.0" prefWidth="338.0" style="-fx-background-color: #FF8787;" text="Introduceti">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="circuit" layoutX="299.0" layoutY="161.0" prefHeight="25.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>

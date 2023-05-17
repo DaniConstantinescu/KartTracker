@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.tipController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Adaugati">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timpi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistici">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cheltuieli">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Grafice">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                                <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <PieChart fx:id="pie" layoutX="221.0" layoutY="113.0" prefWidth="558.0" />
+      <Label fx:id="label" alignment="TOP_CENTER" layoutY="62.0" prefHeight="36.0" prefWidth="1000.0" text="Graficul chelutililor grupare dupa tip">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>

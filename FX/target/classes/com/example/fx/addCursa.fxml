@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addCircuitAnchor" maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.newRaceController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Adaugati">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timpi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistici">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cheltuieli">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Grafice">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                                <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <Label alignment="TOP_CENTER" layoutY="57.0" prefHeight="47.0" prefWidth="1000.0" text="Introduceti o noua cursa">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+      <Label layoutX="203.0" layoutY="181.0" text="Circuit: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="circuit" layoutX="263.0" layoutY="182.0" prefWidth="150.0" />
+      <Label layoutX="453.0" layoutY="325.0" text="Best Lap(overall): ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="best" layoutX="593.0" layoutY="326.0" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="203.0" layoutY="252.0" text="Start Position: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="252.0" text="Finish Position: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="700.0" layoutY="252.0" text="Pits: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="574.0" layoutY="181.0" text="Data: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="startPos" layoutX="318.0" layoutY="253.0" prefHeight="25.0" prefWidth="90.0" />
+      <Spinner fx:id="finishPos" layoutX="563.0" layoutY="253.0" prefHeight="25.0" prefWidth="90.0" />
+      <Spinner fx:id="pits" layoutX="738.0" layoutY="253.0" prefHeight="25.0" prefWidth="60.0" />
+      <DatePicker fx:id="data" layoutX="624.0" layoutY="182.0" />
+      <Button layoutX="297.0" layoutY="451.0" mnemonicParsing="false" onAction="#addRace" prefHeight="56.0" prefWidth="408.0" style="-fx-background-color: #FF8787;" text="Introduceti">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="203.0" layoutY="325.0" text="Laps: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="laps" layoutX="248.0" layoutY="326.0" prefHeight="25.0" prefWidth="90.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.evoTimpController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Adaugati">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timpi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistici">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cheltuieli">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Grafice">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                                <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <LineChart fx:id="line" layoutX="121.0" layoutY="131.0" prefHeight="404.0" prefWidth="759.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+      <Label layoutX="268.0" layoutY="78.0" text="Alegeti circuitul: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="circuit" layoutX="415.0" layoutY="80.0" prefHeight="25.0" prefWidth="319.0" />
+
+    </children>
+</AnchorPane>

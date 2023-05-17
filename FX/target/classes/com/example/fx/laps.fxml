@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addCircuitAnchor" maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" style="-fx-background-color: #535c68;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.bestController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Adaugati">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timpi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistici">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cheltuieli">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Grafice">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                                <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <Label layoutX="194.0" layoutY="83.0" text="Aflati cel mai bun timp scos pentru circuitul: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="circuit" layoutX="586.0" layoutY="85.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="lcircuit" alignment="TOP_CENTER" layoutY="124.0" prefHeight="30.0" prefWidth="1000.0" textFill="#dcdae0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="224.0" text="Aflati cel mai bun timp scos in data de: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="zi" layoutX="564.0" layoutY="226.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="lzi" alignment="TOP_CENTER" layoutY="270.0" prefHeight="30.0" prefWidth="1000.0" textFill="#dcdae0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="371.0" text="Aflati timpul pentru un tur ideal pe circuitul: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ideal" layoutX="586.0" layoutY="373.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="lideal" alignment="TOP_CENTER" layoutY="429.0" prefHeight="30.0" prefWidth="1000.0" textFill="#dcdae0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="sectors" alignment="TOP_CENTER" layoutY="486.0" prefHeight="30.0" prefWidth="1000.0" textFill="#dcdae0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>

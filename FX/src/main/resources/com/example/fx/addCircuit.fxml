@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addCircuitAnchor" maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.newCircuitController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1000.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Adaugati">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Timpi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistici">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Cheltuieli">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Grafice">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                                <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <Label layoutX="310.0" layoutY="152.0" text="Nume: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputNume" layoutX="388.0" layoutY="155.0" prefHeight="25.0" prefWidth="303.0" />
+      <Label alignment="TOP_CENTER" layoutY="57.0" prefHeight="47.0" prefWidth="1000.0" text="Introduceti un circuit nou">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="265.0" prefHeight="27.0" prefWidth="85.0" text="Best Lap:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputBest" layoutX="282.0" layoutY="266.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="518.0" layoutY="265.0" prefHeight="27.0" prefWidth="115.0" text="Personal Lap:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputPers" layoutX="633.0" layoutY="266.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="301.0" prefHeight="27.0" prefWidth="1000.0" text="( Introduceti timpii in formatul mm:ss:ms )">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="363.0" layoutY="213.0" text="Tara: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputTara" layoutX="426.0" layoutY="214.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="234.0" layoutY="377.0" prefHeight="27.0" prefWidth="67.0" text="Viraje:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputTurns" layoutX="296.0" layoutY="378.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="519.0" layoutY="377.0" prefHeight="27.0" prefWidth="115.0" text="Lungime(m):">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputLungime" layoutX="633.0" layoutY="378.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button layoutX="410.0" layoutY="469.0" mnemonicParsing="false" onAction="#addCircuit" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #FF8787;" text="Introduceti" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="580.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx.MenuController">
+   <children>
+       <MenuBar prefHeight="25.0" prefWidth="1000.0">
+           <menus>
+               <Menu mnemonicParsing="false" text="Adaugati">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#switchToaddTimp" text="Timpi" />
+                       <MenuItem mnemonicParsing="false" onAction="#switchToaddCircuit" text="Circuite" />
+                       <MenuItem mnemonicParsing="false" onAction="#switchToaddRace" text="Curse" />
+                       <MenuItem mnemonicParsing="false" onAction="#switchToaddCheltuiala" text="Cheltuieli" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Timpi">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#switchToBest" text="Best" />
+                       <MenuItem mnemonicParsing="false" onAction="#switchToEvoTimp" text="Evolutie" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Statistici">
+                   <items>
+                       <MenuItem mnemonicParsing="false" onAction="#switchToDelta" text="Delta" />
+                   </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Cheltuieli">
+                   <items>
+                       <Menu mnemonicParsing="false" text="Grafice">
+                           <items>
+                               <MenuItem mnemonicParsing="false" onAction="#switchToTip" text="Tip" />
+                               <MenuItem mnemonicParsing="false" onAction="#switchToEvo" text="Evolutie" />
+                           </items>
+                       </Menu>
+                   </items>
+               </Menu>
+           </menus>
+       </MenuBar>
+      <ImageView fitHeight="628.0" fitWidth="1000.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@homeIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="153.0" text="Bun venit la Karting Tracker" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="219.0" text="O aplicatie care va ajuta sa va urmatiti evolutia in karting " textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutY="521.0" prefHeight="45.0" prefWidth="1000.0" text="Alegeti una dintre optiunile din meniu pentru a incepe" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
