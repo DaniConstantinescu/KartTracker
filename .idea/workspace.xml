@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07ca4886-5480-4748-bbd9-07097af82e43" name="Changes" comment="Vers 1">
+      <change beforePath="$PROJECT_DIR$/Proiect/src/Cursa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/src/Cursa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proiect/src/Lap.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/src/Lap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proiect/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proiect/src/PersonalLaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/Proiect/src/PersonalLaps.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Proiect" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IukkbmcZlRnfgNYjNspAbyiD3O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Facultate/P3/Proiect",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Facultate\P3\Proiect" />
+      <recent name="D:\Facultate\P3\Files" />
+      <recent name="D:\Facultate\P3\Proiect\Files" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07ca4886-5480-4748-bbd9-07097af82e43" name="Changes" comment="" />
+      <created>1671039001472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671039001472</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Vers 1">
+      <created>1671040861375</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671040861375</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Vers 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vers 1" />
+  </component>
+</project>
